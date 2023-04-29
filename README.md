@@ -1,1 +1,2 @@
-# ProcTree
+## About
+program creates a tree structure using a custom TreeNode struct, and then creates a new process for each node in the tree using the fork() system call. Each child process prints out its node's value, and then creates child processes for its own children. The parent process waits for its child processes to finish using wait(), and then the program waits for 1 second before using the system() function to run the pstree command to view the process tree for the current process's parent process.
